@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "paniten-bot.fullname" . }}-config
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "paniten-bot.labels" . | nindent 4 }}
+data:
+  DATABASE_PATH: {{ .Values.config.databasePath | quote }}
+  PORT: {{ .Values.config.port | quote }}
+  HOST: {{ .Values.config.host | quote }}
+  NODE_ENV: {{ .Values.config.nodeEnv | quote }}
+  LOG_LEVEL: {{ .Values.config.logLevel | quote }}
+  TELEGRAM_TIMEOUT: {{ .Values.config.telegramTimeout | quote }}
+  WEBHOOK_TIMEOUT: {{ .Values.config.webhookTimeout | quote }}

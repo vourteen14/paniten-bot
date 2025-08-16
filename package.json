@@ -1,0 +1,28 @@
+{
+  "name": "paniten-bot",
+  "version": "1.0.0",
+  "description": "Simple alert management system with Telegram bot interface for infrastructure monitoring",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "NODE_ENV=development node src/app.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "setup": "mkdir -p data && echo \"Setup complete\"",
+    "clean": "rm -rf data/*.db && echo \"Database cleaned\""
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "node-telegram-bot-api": "^0.63.0",
+    "sqlite3": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+apiVersion: v2
+name: paniten-bot
+description: A Helm chart for Paniten Bot - Alert management system with Telegram integration
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+home: https://github.com/vourteen14/paniten-bot
+sources:
+  - https://github.com/vourteen14/paniten-bot
+maintainers:
+  - name: Angga Suriana
+    email: angga.suriana.202@gmail.com
